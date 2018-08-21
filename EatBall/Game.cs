@@ -286,7 +286,7 @@ namespace EatBall
 
             myPlayer.SetPosBalu(170, 1, myPlayer.Bal);
             TheEnd();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
         }
 
         public List<Ball> EatOneBall(bool temp, Ball ball, int i)
