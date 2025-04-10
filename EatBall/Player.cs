@@ -76,11 +76,11 @@ namespace EatBall
                     }
                 }
 
-                int step = 10;
+                int step = 0;
                 for (int i = 0; i < SortChampion.Count; i++)
                 {
-                    SetPosBalu(150, 20 + step, SortChampion[i]);
-                    step += 10;
+                    SetPosBalu(0, step+=6, SortChampion[i]);
+                    
 
                     if (i == 6)
                         break;
@@ -106,12 +106,6 @@ namespace EatBall
 
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Cyan;
-
-            for (int i = 0; i < 5; i++)
-            {
-                Console.SetCursorPosition(0, i + 1);
-                Console.Write(cleen.PadLeft((int)WindowSize.Width));
-            }
 
             for (int j = 0; j < ch.Count(); j++)
             {

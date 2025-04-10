@@ -16,13 +16,10 @@ namespace EatBall
         {
             game = _game;
             Console.Title = "Eat Ball";
-            Console.BufferWidth = Console.LargestWindowWidth;
-            Console.BufferHeight = Console.LargestWindowHeight;
-            Console.SetWindowSize(Console.LargestWindowWidth,Console.LargestWindowHeight);
-
+            Console.BufferWidth = ((int)WindowSize.Width);
+            Console.BufferHeight = ((int)WindowSize.Height);
+            Console.SetWindowSize(((int)WindowSize.Width), ((int)WindowSize.Height));
             Console.SetWindowPosition(0, 0);
-
-
         }
 
         public void StartMenu()
@@ -47,7 +44,9 @@ namespace EatBall
                 }
 
                 key = Console.ReadKey(true).Key;
-         
+                Console.Clear();
+
+
                 if (key == ConsoleKey.UpArrow)
                 {
                     cont--;
@@ -115,11 +114,11 @@ namespace EatBall
 
         public void mGame()
         {
-            int x = 150, y = 50;
+            int x = 20, y = 0;
             string[] str = { " ******       ***      *****  *****  *******" ,
                              "**     *     ** **     **  ****  **  **     " ,
                              "*           **   **    **   **   **  *******" ,
-                             "*     **   *********   **        **  **     " ,
+                             "*   ****   *********   **        **  **     " ,
                              " ******   **       **  **        **  *******" };
 
             for(int i =0; i<str.Length;i++)
@@ -133,7 +132,7 @@ namespace EatBall
 
         public void mTable()
         {
-            int x = 150, y = 60;
+            int x = 20, y = 7;
             string[] str = { "********      ***      ******     **        *******" ,
                              "   **        ** **     **   **    **        **     " ,
                              "   **       **   **    ********   **        *******" ,
@@ -151,7 +150,7 @@ namespace EatBall
 
         public void mExit()
         {
-            int x = 150, y = 70;
+            int x = 20, y = 14;
             string[] str = { "*******  **   **  **  ******** " ,
                              "**        ** **          **    " ,
                              "*******    ***    **     **    " ,

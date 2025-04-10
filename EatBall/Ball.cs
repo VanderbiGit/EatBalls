@@ -45,8 +45,8 @@ namespace EatBall
 
         public void SetStartPos()
         {
-            myPoint.X = 150;
-            myPoint.Y = 50;
+            myPoint.X = 80;
+            myPoint.Y = 30;
             SetCenterPos();
         }
 

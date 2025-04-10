@@ -257,17 +257,8 @@ namespace EatBall
 
         public void CreatePointRandom()
         {
-
-            RandPosForEnemy.Add(new Point(20, 17));
-            RandPosForEnemy.Add(new Point(170, 17));
-            RandPosForEnemy.Add(new Point(320, 17));
-
-            RandPosForEnemy.Add(new Point(20, 50));
-            RandPosForEnemy.Add(new Point(320, 50));
-
-            RandPosForEnemy.Add(new Point(20, 100));
-            RandPosForEnemy.Add(new Point(170, 100));
-            RandPosForEnemy.Add(new Point(320, 100));
+            RandPosForEnemy.Add(new Point(30, 30));
+            RandPosForEnemy.Add(new Point(100, 65));
         }
 
         public void CleanBall()
@@ -305,7 +296,7 @@ namespace EatBall
             string str = "";
             Console.SetCursorPosition(0, 7);
             Console.BackgroundColor = ConsoleColor.White;
-            Console.Write(str.PadLeft(340));
+            Console.Write(str.PadLeft(200));
             Console.BackgroundColor = ConsoleColor.Black;
         }
 

@@ -6,6 +6,7 @@ using System.Threading;
 using System.Drawing;
 
 
+
 namespace EatBall
 {
     enum _menu { Game, Table, Exit };
@@ -15,8 +16,12 @@ namespace EatBall
 
     class _Main
     {
+
+
+
         static void Main(string[] args)
         {
+
             Game _EatBall = new Game();
             Menu myMenu = new Menu(_EatBall);
             myMenu.StartMenu();

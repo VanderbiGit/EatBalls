@@ -16,13 +16,13 @@ namespace EatBall
             if (ball.GetCenterPos().X < 11)
                 ball.MoveLeft = false;
 
-            if (ball.GetCenterPos().X > 330)
+            if (ball.GetCenterPos().X > 190)
                 ball.MoveRight = false;
 
             if (ball.GetCenterPos().Y < 15)
                 ball.MoveUp = false;
 
-            if (ball.GetCenterPos().Y > 105)
+            if (ball.GetCenterPos().Y > 45)
                 ball.MoveDown = false;
 
         }
